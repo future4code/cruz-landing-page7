@@ -9,11 +9,6 @@
     font-family: "poppins", sans-serif;
 }
 
-#index {
-    display: grid;
-    grid-template-rows: 1fr 7fr 1fr;
-}
-
 /* ===============
 ==== cabeçalho ===
 =============== */
@@ -79,15 +74,18 @@ header img {
 =============== */
 
 /* === Seção 1 === */
+
 #card-principal {
     margin-top: 4rem;
-
+    margin: 0 auto;
+    width: 95%;
 }
 
 #card-principal h1 {
     text-align: center;
     font-size: 4rem;
     font-weight: 800;
+    margin-top: 4rem;
 }
 
 #card-principal span {
@@ -110,23 +108,22 @@ header img {
     flex-direction: column;
     border: 2px gray solid;
     border-radius: 2rem;
-    box-shadow: 1px 1px 5px black;
+    box-shadow: 2px 2px 8px black;
     text-align: center;
     padding: 2rem 1rem;
-    width: 30%;
-    height: 15rem;    
+    width: 40%;
+    height: 16rem;
 }
 
 #div-simular-cpf p {
     font-weight: 600;
-    font-size: 1.5rem;
-    margin-top: 4%;
+    font-size: 2rem;
 }
 
 #input-cpf-simulacao {
     outline: none;
     width: 80%;
-    font-size: 1.5rem;
+    font-size: 2rem;
     border: none;
     border-bottom: 2px #333 solid;
     margin-top: 1rem;
@@ -143,14 +140,16 @@ header img {
     border-radius: 2rem;
     outline: none;
 }
+
 .botao:hover {
     padding: 0.38rem 1.38rem;
     color: #C45C5C;
     border: 2px #C45C5C solid;
     background-color: white;
 }
-#botao-form{
-    margin-top: 12%;
+
+#botao-form {
+    margin-top: 6%;
     width: 15rem;
     height: 4rem;
 }
@@ -159,13 +158,54 @@ header img {
     width: 40rem;
     padding: 1rem;
 }
+
 /* === Seção 2 === */
-#card-ajuda{
-    background-color: #C45C5C;
+
+#card-ajuda {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 102vh;
+    background-color: #D9C7B8;
+    margin-top: 5.8rem;
 }
-#card-ajuda img{
-    width: 80px;
+
+#card-ajuda h3 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 3rem;
+    padding: 3rem;
+    margin-top: -3rem;
 }
+
+#div-container2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+#div-container2 div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 30%;
+    height: 25rem;
+    border-radius: 2rem;
+}
+
+#div-container2 p {
+    text-align: center;
+    font-size: 2.1rem;
+    padding: 0.5rem;
+
+}
+
+#card-ajuda img {
+    width: 50%;
+    padding: 0.5rem;
+}
+
 /* ===============
 ==== rodapé ======
 =============== */
