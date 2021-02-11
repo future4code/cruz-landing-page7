@@ -100,7 +100,6 @@ header img {
     margin: auto;
     align-items: center;
     margin-top: 2rem;
-    /* background-color:tomato */
 }
 
 #div-simular-cpf {
@@ -165,8 +164,8 @@ header img {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 102vh;
-    background-color: #D9C7B8;
+    height: 103vh;
+    background-color:#D9C7B8;
     margin-top: 5.8rem;
 }
 
@@ -206,6 +205,43 @@ header img {
     padding: 0.5rem;
 }
 
+/* === Seção 2 === */
+#card-vantagens{
+    height: 103vh;
+
+}
+#div-imagem{
+    background-image: url(./imagens/menina-fundo.jpg);
+    height: 100%;
+    background-size: cover;
+    display: flex
+}
+
+#div-vantagens{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #d9c7b886;
+    width: 30%;
+    height: 50%;
+    padding: 2rem;
+    margin: 2rem;
+    text-align: center;
+}
+#div-vantagens h3{
+    font-size: 2.5rem;
+}
+#div-vantagens p{
+    font-size: 2rem;
+}
+#botao-vantagens{
+    margin: 1rem;
+}
+#botao-vantagens:hover{
+    background-color: #D58989;
+    color: white;
+}
 /* ===============
 ==== rodapé ======
 =============== */
