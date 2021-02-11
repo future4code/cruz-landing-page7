@@ -36,7 +36,10 @@ header {
     text-decoration: none;
     color: white;
 }
-
+header nav{
+    display: flex;
+    align-items: center;
+}
 header button {
     background-color: #C45C5C;
     font-size: 1.3rem;
@@ -45,8 +48,10 @@ header button {
     padding: 0.5rem 1.5rem;
     border-radius: 2rem;
     outline: none;
+    margin: 2%;
 
 }
+
 
 header button:hover {
     padding: 0.4rem 1.38rem;
@@ -148,6 +153,12 @@ footer a img {
     header a {
         padding: 2rem 1rem;
     }
+    header button:active {
+        padding: 0.4rem 1.38rem;
+        color: #C45C5C;
+        border: 2px #C45C5C solid;
+        background-color: #c45c5c00;
+    }
     #logo-rodape {
         width: 25%;
         height: 80%;
@@ -158,10 +169,7 @@ footer a img {
     #rodape-redes-sociais img {
         width: 1.5rem;
     }
-    header button:active {
-        padding: 0.4rem 1.38rem;
-        color: #C45C5C;
-        border: 2px #C45C5C solid;
-        background-color: #c45c5c00;
+    footer section:last-child{
+        font-size: 0.8rem;
     }
 }
