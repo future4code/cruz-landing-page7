@@ -36,6 +36,13 @@ header {
     text-decoration: none;
     color: white;
 }
+#links-menu a:hover {
+    background-color: rgba(255, 255, 255, 0.226);
+    border-radius: 2px;
+}
+#botao{
+    margin-left: 1rem;
+}
 header nav{
     display: flex;
     align-items: center;
@@ -153,12 +160,20 @@ footer a img {
     header a {
         padding: 2rem 1rem;
     }
+    #links-menu a:hover {
+        background-color: rgba(255, 255, 255, 0.226);
+        border-radius: 2px;
+    }
     header button:active {
         padding: 0.4rem 1.38rem;
         color: #C45C5C;
         border: 2px #C45C5C solid;
         background-color: #c45c5c00;
     }
+    #botao{
+        margin-left: 0;
+    }
+    
     #logo-rodape {
         width: 25%;
         height: 80%;
