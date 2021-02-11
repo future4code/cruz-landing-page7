@@ -9,10 +9,6 @@
     font-family: "poppins", sans-serif;
 }
 
-body {
-    height: 100vh;
-}
-
 #index {
     display: grid;
     grid-template-rows: 1fr 7fr 1fr;
@@ -36,17 +32,21 @@ header {
     text-decoration: none;
     color: white;
 }
+
 #links-menu a:hover {
     background-color: rgba(255, 255, 255, 0.226);
     border-radius: 2px;
 }
-#botao{
+
+#botao {
     margin-left: 1rem;
 }
-header nav{
+
+header nav {
     display: flex;
     align-items: center;
 }
+
 header button {
     background-color: #C45C5C;
     font-size: 1.3rem;
@@ -56,9 +56,7 @@ header button {
     border-radius: 2rem;
     outline: none;
     margin: 2%;
-
 }
-
 
 header button:hover {
     padding: 0.4rem 1.38rem;
@@ -76,6 +74,98 @@ header img {
     width: 15%;
 }
 
+/* ===============
+==== index ======
+=============== */
+
+/* === Seção 1 === */
+#card-principal {
+    margin-top: 4rem;
+
+}
+
+#card-principal h1 {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+#card-principal span {
+    color: #C45C5C;
+    display: block;
+}
+
+.div-container {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    margin-top: 2rem;
+    /* background-color:tomato */
+}
+
+#div-simular-cpf {
+    display: flex;
+    flex-direction: column;
+    border: 2px gray solid;
+    border-radius: 2rem;
+    box-shadow: 1px 1px 5px black;
+    text-align: center;
+    padding: 2rem 1rem;
+    width: 30%;
+    height: 15rem;    
+}
+
+#div-simular-cpf p {
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-top: 4%;
+}
+
+#input-cpf-simulacao {
+    outline: none;
+    width: 80%;
+    font-size: 1.5rem;
+    border: none;
+    border-bottom: 2px #333 solid;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.botao {
+    color: white;
+    background-color: #C45C5C;
+    font-size: 1.3rem;
+    font-weight: 600;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 2rem;
+    outline: none;
+}
+.botao:hover {
+    padding: 0.38rem 1.38rem;
+    color: #C45C5C;
+    border: 2px #C45C5C solid;
+    background-color: white;
+}
+#botao-form{
+    margin-top: 12%;
+    width: 15rem;
+    height: 4rem;
+}
+
+#imagem-index {
+    width: 40rem;
+    padding: 1rem;
+}
+/* === Seção 2 === */
+#card-ajuda{
+    background-color: #C45C5C;
+}
+#card-ajuda img{
+    width: 80px;
+}
 /* ===============
 ==== rodapé ======
 =============== */
@@ -170,10 +260,9 @@ footer a img {
         border: 2px #C45C5C solid;
         background-color: #c45c5c00;
     }
-    #botao{
+    #botao {
         margin-left: 0;
     }
-    
     #logo-rodape {
         width: 25%;
         height: 80%;
@@ -184,7 +273,7 @@ footer a img {
     #rodape-redes-sociais img {
         width: 1.5rem;
     }
-    footer section:last-child{
+    footer section:last-child {
         font-size: 0.8rem;
     }
 }
