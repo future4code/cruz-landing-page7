@@ -76,29 +76,42 @@
     grid-column: 1/2;
     display: grid;
     padding-left: 5%;
-    
 }
 
 .box1 .imge{    
     grid-column: 2/3;
     display: grid;
-   
-    
 }
 
 .box1 img{
     width: 95%;
 }
 
-
-
 .box1 h6{
     font-size: 0.8em;
 }
-.box1 h5{
-  
-    margin-top: 0.3em;
 
+.box1 h5{
+  margin-top: 0.3em;
 }
 
+.final{
+    height: 20hem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 
+.final .texto2{
+    font-size: 1.5em;
+    width: 90%;
+    padding-left: 10%;
+    text-align: center;
+    margin-bottom:1em;
+}
+
+.final img{
+    height: 20em;
+    width: 100%;
+}
