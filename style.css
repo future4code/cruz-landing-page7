@@ -105,13 +105,14 @@ header img {
 #div-simular-cpf {
     display: flex;
     flex-direction: column;
+    align-items: center;
     border: 2px gray solid;
     border-radius: 2rem;
     box-shadow: 2px 2px 8px black;
     text-align: center;
     padding: 2rem 1rem;
     width: 40%;
-    height: 16rem;
+    height: 20%;
 }
 
 #div-simular-cpf p {
@@ -149,12 +150,12 @@ header img {
 
 #botao-form {
     margin-top: 6%;
-    width: 15rem;
-    height: 4rem;
+    height: 40%;
+    width: 50%;
 }
 
 #imagem-index {
-    width: 40rem;
+    width: 60%;
     padding: 1rem;
 }
 
@@ -165,7 +166,7 @@ header img {
     flex-direction: column;
     justify-content: center;
     height: 103vh;
-    background-color:#D9C7B8;
+    background-color: #D9C7B8;
     margin-top: 5.8rem;
 }
 
@@ -197,7 +198,6 @@ header img {
     text-align: center;
     font-size: 2.1rem;
     padding: 0.5rem;
-
 }
 
 #card-ajuda img {
@@ -205,19 +205,20 @@ header img {
     padding: 0.5rem;
 }
 
-/* === Seção 2 === */
-#card-vantagens{
-    height: 103vh;
+/* === Seção 3 === */
 
+#card-vantagens {
+    height: 103vh;
 }
-#div-imagem{
+
+#div-imagem {
     background-image: url(./imagens/menina-fundo.jpg);
     height: 100%;
     background-size: cover;
     display: flex
 }
 
-#div-vantagens{
+#div-vantagens {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -229,19 +230,24 @@ header img {
     margin: 2rem;
     text-align: center;
 }
-#div-vantagens h3{
+
+#div-vantagens h3 {
     font-size: 2.5rem;
 }
-#div-vantagens p{
+
+#div-vantagens p {
     font-size: 2rem;
 }
-#botao-vantagens{
+
+#botao-vantagens {
     margin: 1rem;
 }
-#botao-vantagens:hover{
+
+#botao-vantagens:hover {
     background-color: #D58989;
     color: white;
 }
+
 /* ===============
 ==== rodapé ======
 =============== */
@@ -289,17 +295,46 @@ footer a img {
     width: 1.8rem;
 }
 
-/* ===============
-==== responsivo ==
-=============== */
+/* ===================
+==== responsividade ==
+====================== */
 
 @media screen and (min-device-width: 421px) and (max-device-width: 800px) {
+    /* Cabeçalho */
     header {
         flex-direction: column;
     }
     #logo-header {
         width: 30%;
     }
+    /* Seção 1  */
+    #card-principal h1 {
+        font-size: 2.5rem;
+        margin-top: 2rem;
+    }
+    #div-simular-cpf {
+        width: 50%;
+    }
+    #div-simular-cpf p {
+        font-size: 1.5rem;
+        margin-top: 1.5rem;
+    }
+    #input-cpf-simulacao {
+        font-size: 1.5rem;
+    }
+    #botao-form {
+        margin-top: 12%;
+        width: 70%;
+    }
+    /* Seção 2 */
+    #div-container2 p {
+        font-size: 1.8rem;
+    }
+    /* Seção 3 */
+    #div-vantagens {
+        width: 40%;
+    }
+    /* rodapé */
     #logo-rodape {
         width: 20%;
         height: 80%;
@@ -307,6 +342,7 @@ footer a img {
 }
 
 @media screen and (max-device-width: 420px) {
+    /* cabeçalho */
     header {
         flex-direction: column;
     }
@@ -339,6 +375,68 @@ footer a img {
     #botao {
         margin-left: 0;
     }
+    /* === Seção 1 === */
+    #card-principal h1 {
+        font-size: 2rem;
+        margin-top: 2rem;
+    }
+    #div-simular-cpf {
+        align-items: center;
+        width: 100%;
+    }
+    #input-cpf-simulacao {
+        font-size: 1.8rem;
+    }
+    #botao-form {
+        height: 50%;
+        width: 60%;
+    }
+    #imagem-index {
+        display: none;
+    }
+    /* Seção 2 */
+    #card-ajuda h3 {
+        font-size: 2rem;
+    }
+    #div-container2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #div-container2 div {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        margin: 1rem;
+        width: 90%;
+        height: 40%;
+    }
+    #div-container2 p {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+    #card-ajuda img {
+        width: 20%;
+        padding: 0;
+    }
+    /* === Seção 3 === */
+    #div-imagem {
+        background-image: url(./imagens/menina-fundo.jpg);
+        height: 100%;
+        background-position: center;
+    }
+    #div-vantagens {
+        width: 90%;
+        height: 90%;
+    }
+    #botao-vantagens {
+        margin: 2rem;
+        font-size: 2rem;
+        width: 90%;
+    }
+    
+    /* Rodapé */
     #logo-rodape {
         width: 25%;
         height: 80%;
