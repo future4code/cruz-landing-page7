@@ -282,22 +282,19 @@ header img {
     font-size: 1rem;
 }
 
-#input-estados{
-    /* width: 50%; */
-}
-#div-container1{
+.div-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* background-color: #1F1F24; */
-    margin-top: -..8rem;
+    margin-top: 8rem;
 }
-#div-container1 div{
+
+.div-container div {
     display: flex;
     flex-direction: column;
 }
 
-#botao-cadastrar{
+#botao-cadastrar {
     margin: 5% auto;
     width: 50%;
 }
@@ -509,6 +506,7 @@ footer a img {
 ====================== */
 
 @media screen and (min-device-width: 421px) and (max-device-width: 800px) {
+    /*============ INDEX ========= */
     /* Cabeçalho */
     header {
         flex-direction: column;
@@ -550,6 +548,25 @@ footer a img {
     #logo-rodape {
         width: 20%;
         height: 80%;
+    }
+    /*============ LOGIN/CADASTRO   ========= */
+    .formularios {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100vh 1fr;
+    }
+    #card-principal {
+        height: 50vh;
+    }
+    .formularios section:first-child {
+        margin-top: 10%;
+    }
+    .formularios section:last-child {
+        margin-top: 10%;
+    }
+    .div-container {
+        margin-top: 0;
+        justify-content: space-between;
     }
 }
 
@@ -661,4 +678,36 @@ footer a img {
     footer section:last-child {
         font-size: 0.8rem;
     }
+    /*============ LOGIN/CADASTRO   ========= */
+    .formularios form {
+        /* width: 50%; */
+    }
+    .formularios {
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 80vh 1fr;
+    }
+    #card-principal {
+        height: 50vh;
+    }
+    .formularios section:first-child {
+        margin-top: 10%;
+    }
+    .formularios section:last-child {
+        margin-top: 10%;
+    }
+    .div-container {
+        margin-top: 0;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+    }
+    #input-idade, #input-estados, #input-cidade{
+        width: 80vw;
+    }
+    #form-login img{
+        width: 30%;
+    }
+    
 }
