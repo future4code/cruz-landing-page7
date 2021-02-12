@@ -1,455 +1,91 @@
-/* ===============
-==== global ======
-=============== */
-
-* {
+*{
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
-    font-family: "poppins", sans-serif;
 }
 
-/* ===============
-==== cabeçalho ===
-=============== */
-
-header {
-    background-color: #1F1F24;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5rem;
+.somos{
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: 1fr 0.5fr 0.5fr;
 }
 
-#links-menu a {
-    padding: 0.5rem 0.5rem;
-    font-size: 1.1rem;
-    text-decoration: none;
-    color: white;
-}
-
-#links-menu a:hover {
-    background-color: rgba(255, 255, 255, 0.226);
-    border-radius: 2px;
-}
-
-#botao-login {
-    margin-left: 1rem;
-}
-
-header nav {
-    display: flex;
-    align-items: center;
-}
-
-header button {
-    background-color: #C45C5C;
-    font-size: 1.3rem;
-    font-weight: 600;
-    border: none;
-    padding: 0.5rem 1.5rem;
-    border-radius: 2rem;
-    outline: none;
-    margin: 2%;
-}
-
-header button:hover {
-    padding: 0.4rem 1.38rem;
-    color: #C45C5C;
-    border: 2px #C45C5C solid;
-    background-color: #c45c5c00;
-}
-
-header button:active {
-    border-color: white;
-    color: white;
-}
-
-header img {
-    width: 15%;
-}
-
-/* ===============
-==== index ======
-=============== */
-
-/* === Seção 1 === */
-
-#card-principal {
-    margin-top: 4rem;
-    margin: 0 auto;
-    width: 95%;
-}
-
-#card-principal h1 {
-    text-align: center;
-    font-size: 4rem;
-    font-weight: 800;
-    margin-top: 4rem;
-}
-
-#card-principal span {
-    color: #C45C5C;
-    display: block;
-}
-
-#card1-container {
-    display: flex;
-    justify-content: space-around;
-    width: 90%;
-    margin: auto;
-    align-items: center;
-    margin-top: 2rem;
-}
-
-#div-simular-cpf {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 2px gray solid;
-    border-radius: 2rem;
-    box-shadow: 2px 2px 8px black;
-    text-align: center;
-    padding: 2rem 1rem;
-    width: 40%;
-    height: 20%;
-}
-
-#div-simular-cpf p {
-    font-weight: 600;
-    font-size: 2rem;
-}
-
-#input-cpf-simulacao {
-    outline: none;
-    width: 80%;
-    font-size: 2rem;
-    border: none;
-    border-bottom: 2px #333 solid;
-    margin-top: 1rem;
-    text-align: center;
-}
-
-.botao {
-    color: white;
-    background-color: #C45C5C;
-    font-size: 1.3rem;
-    font-weight: 600;
-    border: none;
-    padding: 0.5rem 1.5rem;
-    border-radius: 2rem;
-    outline: none;
-}
-
-.botao:hover {
-    padding: 0.38rem 1.38rem;
-    color: #C45C5C;
-    border: 2px #C45C5C solid;
-    background-color: white;
-}
-
-#botao-form {
-    margin-top: 6%;
-    height: 40%;
-    width: 50%;
-}
-
-#imagem-index {
-    width: 60%;
-    padding: 1rem;
-}
-
-/* === Seção 2 === */
-
-#card-ajuda {
-    display: flex;
-    flex-direction: column;
+.somos h1{
+    background-color: #d9c7b8;
+    font-size: 4em;
+    margin-top: 0.5em;
     justify-content: center;
-    height: 103vh;
-    background-color: #D9C7B8;
-    margin-top: 5.8rem;
-}
-
-#card-ajuda h3 {
-    text-align: center;
-    font-weight: 400;
-    font-size: 3rem;
-    padding: 3rem;
-    margin-top: -3rem;
-}
-
-#card2-container {
-    display: flex;
-    justify-content: space-around;
-}
-
-#card2-container div {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     align-items: center;
-    justify-content: center;
-    background-color: white;
-    width: 30%;
-    height: 25rem;
-    border-radius: 2rem;
+    margin-top: 0.5em;
 }
 
-#card2-container p {
-    text-align: center;
-    font-size: 2.1rem;
-    padding: 0.5rem;
-}
-
-#card-ajuda img {
-    width: 50%;
-    padding: 0.5rem;
-}
-
-/* === Seção 3 === */
-
-#card-vantagens {
-    height: 103vh;
-}
-
-#div-imagem {
-    background-image: url(./imagens/menina-fundo.jpg);
-    height: 100%;
-    background-size: cover;
-    display: flex
-}
-
-#div-vantagens {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #d9c7b886;
-    width: 30%;
-    height: 50%;
-    padding: 2rem;
-    margin: 2rem;
-    text-align: center;
-}
-
-#div-vantagens h3 {
-    font-size: 2.5rem;
-}
-
-#div-vantagens p {
-    font-size: 2rem;
-}
-
-#botao-vantagens {
-    margin: 1rem;
-}
-
-#botao-vantagens:hover {
-    background-color: #D58989;
-    color: white;
-}
-
-/* ===============
-==== rodapé ======
-=============== */
-
-footer {
-    background-color: #1F1F24;
-    color: rgba(255, 255, 255, 0.63);
-}
-
-footer section:first-child {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5rem 1.5rem 0.5rem 1.5rem;
-}
-
-footer section:last-child {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5rem 1.5rem 1.5rem 1.5rem;
-    border-top: 2px rgba(255, 255, 255, 0.158) solid;
-}
-
-#logo-rodape {
-    width: 10%;
-    height: 80%;
-}
-
-#rodape-redes-sociais {
-    display: flex;
+.somos p{
+    font-size: 2em;
+    margin-top: 0.5em;
+    display: grid;
     justify-content: center;
     align-items: center;
 }
 
-#rodape-redes-sociais a {
-    margin: 0.5rem;
+.somos h6{
+    font-size: 1em;
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
 
-footer a:last-child img {
-    width: 2.5rem;
+.mudando{
+    margin-top: 3em;
+    background-color: moccasin;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr;
+    height: 100vh;
 }
 
-footer a img {
-    width: 1.8rem;
+.mudando .titulo{
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
 }
 
-/* ===================
-==== responsividade ==
-====================== */
-
-@media screen and (min-device-width: 421px) and (max-device-width: 800px) {
-    /* Cabeçalho */
-    header {
-        flex-direction: column;
-    }
-    #logo-header {
-        width: 30%;
-    }
-    /* Seção 1  */
-    #card-principal h1 {
-        font-size: 2.5rem;
-        margin-top: 2rem;
-    }
-    #div-simular-cpf {
-        width: 50%;
-    }
-    #div-simular-cpf p {
-        font-size: 1.5rem;
-        margin-top: 1.5rem;
-    }
-    #input-cpf-simulacao {
-        font-size: 1.2rem;
-    }
-    #botao-form {
-        margin-top: 12%;
-        width: 70%;
-    }
-    /* Seção 2 */
-    #card2-container p {
-        font-size: 1.8rem;
-    }
-    /* Seção 3 */
-    #div-imagem {
-        background-position: center;
-    }
-    #div-vantagens {
-        width: 40%;
-    }
-    /* rodapé */
-    #logo-rodape {
-        width: 20%;
-        height: 80%;
-    }
+.box1{
+    width: 100vw;
+    justify-content: center;
+    font-size: 1.5em;
+    display: grid;
 }
 
-@media screen and (max-device-width: 420px) {
-    /* cabeçalho */
-    header {
-        flex-direction: column;
-    }
-    #logo-header {
-        width: 50%;
-    }
-    header nav {
-        margin-top: 5%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    header button {
-        margin-top: 5%;
-    }
-    header a {
-        padding: 2rem 1rem;
-    }
-    #links-menu a:hover {
-        background-color: rgba(255, 255, 255, 0.226);
-        border-radius: 2px;
-    }
-    header button:active {
-        padding: 0.4rem 1.38rem;
-        color: #C45C5C;
-        border: 2px #C45C5C solid;
-        background-color: #c45c5c00;
-    }
-    #botao-login {
-        margin-left: 0;
-    }
-    /* === Seção 1 === */
-    #card-principal h1 {
-        font-size: 2rem;
-        margin-top: 2rem;
-    }
-    #div-simular-cpf {
-        align-items: center;
-        width: 100%;
-    }
-    #input-cpf-simulacao {
-        font-size: 1.8rem;
-    }
-    #botao-form {
-        height: 50%;
-        width: 60%;
-    }
-    #imagem-index {
-        display: none;
-    }
-    /* Seção 2 */
-    #card-ajuda h3 {
-        font-size: 2rem;
-    }
-    #card2-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
-    #card2-container div {
-        display: flex;
-        flex-direction: column;
-        padding: 1rem;
-        margin: 1rem;
-        width: 90%;
-        height: 40%;
-    }
-    #card2-container p {
-        font-size: 1rem;
-        padding: 0 1rem;
-    }
-    #card-ajuda img {
-        width: 20%;
-        padding: 0;
-    }
-    /* === Seção 3 === */
-    #div-imagem {
-        background-image: url(./imagens/menina-fundo.jpg);
-        height: 100%;
-        background-position: center;
-    }
-    #div-vantagens {
-        width: 90%;
-        height: 90%;
-    }
-    #botao-vantagens {
-        margin: 2rem;
-        font-size: 2rem;
-        width: 90%;
-    }
-    /* Rodapé */
-    #logo-rodape {
-        width: 25%;
-        height: 80%;
-    }
-    footer a:last-child img {
-        width: 2rem;
-    }
-    #rodape-redes-sociais img {
-        width: 1.5rem;
-    }
-    footer section:last-child {
-        font-size: 0.8rem;
-    }
+.box1 .texto{
+    padding-left: 3%;
 }
+
+.box1 h5{
+    padding-top: 1em;
+}
+
+.final{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.final .texto2{
+    grid-row: 1/2;
+    margin-top: 3em;
+    font-size: 1.5em;
+    width: 70%;
+    text-align: center;
+    margin: 1em auto ;
+}
+
+.final img{
+    grid-row: 2/3;
+    height: 20rem;
+    width: 100%;
+
