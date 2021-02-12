@@ -331,6 +331,9 @@ footer a img {
         font-size: 1.8rem;
     }
     /* Seção 3 */
+    #div-imagem {
+        background-position: center;
+    }
     #div-vantagens {
         width: 40%;
     }
