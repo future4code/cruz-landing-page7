@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,24 +10,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <img src="./imagens/logo-pequeno.png" alt="Logo upfour" id="logo-header">
         <nav>
             <div id="links-menu">
-                <a href="">Quem somos</a>
+                <a href="index.html">Início</a>
+                <a href="sobre.html">Quem somos</a>
                 <a href="">Vantagens</a>
                 <a href="">Trabalhe Conosco</a>
                 <a href="">Contato</a>
             </div>
-
-            <a href="" id="botao-login">
-                <button class="botao-geral"> Login </button>
-            </a>
         </nav>
     </header>
 
-    <main class="formularios"> 
+    <main class="formularios">
         <section>
             <form action="" id="form-login">
                 <legend>Login</legend>
@@ -34,39 +33,83 @@
                 <input type="email" name="email-login" id="input-email-login">
                 <label for="senha">Senha</label>
                 <input type="password">
-
+                <div>
+                    <a href="https://accounts.google.com/" target="_blank"><button>Entrar com <img
+                                src="./imagens/google.png" alt="icone google"></button></a>
+                    <a href="https://www.facebook.com/" target="_blank"><button>Entrar com <img
+                                src="./imagens/facebook-azul.png" alt="icone facebook"></button></a>
+                </div>
                 <input type="submit" value="Entrar" class="botao" id="botao-formulario-login">
-
-                <button>Entrar com <img src="./imagens/google.png" alt="icone google"></button>
-                <button>Entrar com <img src="./imagens/facebook-azul.png" alt="icone facebook"></button>
+                <a href="http://" target="_blank" rel="noopener noreferrer"></a>
             </form>
         </section>
         <section>
             <form action="" id="form-cadastro">
                 <legend>Cadastro</legend>
-                <label for="nome">Nome:</label>
-                <input type="text">
-                <label for="sobrenome">Sobrenome:</label>
-                <input type="text">
+                <label for="nome">Nome completo</label>
+                <input type="text" name="nome" id="form-nome">
                 <label for="email-cadastro">Email:</label>
-                <input type="email" name="email-cadastro" id="input-email-cadastro">
-                <label for="idade">Idade</label>
-                <input type="number">
-                <label for="sexo">Sexo:</label>
-                <input type="radio" name="feminino" id="input-feminino"> Feminino
-                <input type="radio" name="masculino" id="input-masculino"> Masculino
-                <input type="radio" name="Outro" id="input-outro">Prefiro não dizer
+                <input type="email" name="email-cadastro" id="input-email-cadastro" placeholder="contato@upfour.com">
+                <div id="div-container1">
+                    <div id="div-idade">
+                        <label for="idade">Idade</label>
+                        <input type="date" name="idade" id="input-idade">
+                    </div>
+                    <div id="div-sexo">
+                        <label for="sexo">Sexo:</label>
+                        <span> <input type="radio" name="sexo" id="feminino" value="Feminino" checked> Feminino</span>
+                        <span><input type="radio" name="sexo" id="masculino"> Masculino</span>
+                        <span><input type="radio" name="sexo" id="outro"> Prefiro não dizer</span>
+                    </div>
+                </div>
                 <label for="cpf">CPF:</label>
-                <input type="number" name="cpf" id="input-cpf">
+                <input type="number" name="cpf" id="input-cpf" placeholder="000.000.000-00">
                 <label for="endereco">Endereço:</label>
-                <input type="text">
+                <input type="text" name="endereco" id="input-endereco" placeholder="Rua Cruz, n° 7">
                 <label for="complemento">Complemento: </label>
-                <input type="text">
-                <label for="estado">Estado: </label>
-                inpu
-                <label for="cidade">Cidade: </label>
-                <input type="text" name="cidade" id="input-cidade">
-                <input type="submit" value="Cadastrar" class="botao">
+                <input type="text" name="complemento" id="input-complemento" placeholder="casa 2">
+                <div id="div-container1">
+                    <div>
+                        <label for="estado">Estado: </label>
+                        <input list="estados" id="input-estados" placeholder="Rio de Janeiro">
+                        <datalist id="estados">
+                            <option value="Acre"></option>
+                            <option value="Alagoas"></option>
+                            <option value="Amapá"></option>
+                            <option value="Amazonas"></option>
+                            <option value="Bahia"></option>
+                            <option value="Ceará"></option>
+                            <option value="Espírito Santo"></option>
+                            <option value="Goiás"></option>
+                            <option value="Maranhão"></option>
+                            <option value="Mato Grosso"></option>
+                            <option value="Mato Grosso do sul"></option>
+                            <option value="Minas Gerais"></option>
+                            <option value="Pará"></option>
+                            <option value="Paraíba"></option>
+                            <option value="Paraná"></option>
+                            <option value="Pernambuco"></option>
+                            <option value="Piauí"></option>
+                            <option value="Rio de Janeiro"></option>
+                            <option value="Rio Grande do Norte"></option>
+                            <option value="Rio Grande do Sul"></option>
+                            <option value="Rondônia"></option>
+                            <option value="Roraima"></option>
+                            <option value="Santa Catarina"></option>
+                            <option value="São Paulo"></option>
+                            <option value="Sergipe"></option>
+                            <option value="Tocantins"></option>
+                            <option value="Distrito Federal"></option>
+                        </datalist>
+                    </div>
+                    <div>
+
+                        <label for="cidade">Cidade: </label>
+                        <input type="text" name="cidade" id="input-cidade" placeholder="Rio de Janeiro">
+                    </div>
+
+                </div>
+                <input type="submit" value="Cadastrar" class="botao" id="botao-cadastrar">
             </form>
         </section>
     </main>
@@ -96,4 +139,5 @@
         </section>
     </footer>
 </body>
+
 </html>

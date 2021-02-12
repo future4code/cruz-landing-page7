@@ -1,0 +1,59 @@
+css
+
+* {
+    background-color: white ;
+    font-family:'poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+h1 {
+    text-align: center;
+    margin-top: auto
+    ;
+} 
+
+.container {
+    height: 600px;
+    align-items: stretch;
+    padding: 16px;
+    display: grid;  
+    grid-template-columns: 30% 30% 30%;
+    margin-bottom: 8px;
+    justify-content: center;
+}
+
+div > h3, p {
+    
+}
+
+.dinheiro-rapido {
+    padding: 16px;
+    flex-direction: row;
+    margin-bottom: 32px;
+    border: 1px solid #575759;
+    width: 75%;
+    
+    
+
+}
+
+.seguros {
+    padding: 16px;
+    flex-direction: row;
+    margin-bottom: 55px;
+    border: 1px solid #575759;
+    width: 80%;
+    
+}
+
+.burocracia {
+    padding: 16px;
+    justify-content: center;
+    flex-direction: row;
+    box-sizing: border-box;
+    border: 1px solid #575759;
+
+}
