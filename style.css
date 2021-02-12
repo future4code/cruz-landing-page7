@@ -33,7 +33,7 @@ header {
     border-radius: 2px;
 }
 
-#botao {
+#botao-login {
     margin-left: 1rem;
 }
 
@@ -93,7 +93,7 @@ header img {
     display: block;
 }
 
-.div-container {
+#card1-container {
     display: flex;
     justify-content: space-around;
     width: 90%;
@@ -178,12 +178,12 @@ header img {
     margin-top: -3rem;
 }
 
-#div-container2 {
+#card2-container {
     display: flex;
     justify-content: space-around;
 }
 
-#div-container2 div {
+#card2-container div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -194,7 +194,7 @@ header img {
     border-radius: 2rem;
 }
 
-#div-container2 p {
+#card2-container p {
     text-align: center;
     font-size: 2.1rem;
     padding: 0.5rem;
@@ -327,7 +327,7 @@ footer a img {
         width: 70%;
     }
     /* Seção 2 */
-    #div-container2 p {
+    #card2-container p {
         font-size: 1.8rem;
     }
     /* Seção 3 */
@@ -375,7 +375,7 @@ footer a img {
         border: 2px #C45C5C solid;
         background-color: #c45c5c00;
     }
-    #botao {
+    #botao-login {
         margin-left: 0;
     }
     /* === Seção 1 === */
@@ -401,13 +401,13 @@ footer a img {
     #card-ajuda h3 {
         font-size: 2rem;
     }
-    #div-container2 {
+    #card2-container {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
     }
-    #div-container2 div {
+    #card2-container div {
         display: flex;
         flex-direction: column;
         padding: 1rem;
@@ -415,7 +415,7 @@ footer a img {
         width: 90%;
         height: 40%;
     }
-    #div-container2 p {
+    #card2-container p {
         font-size: 1rem;
         padding: 0 1rem;
     }
@@ -438,7 +438,6 @@ footer a img {
         font-size: 2rem;
         width: 90%;
     }
-    
     /* Rodapé */
     #logo-rodape {
         width: 25%;
