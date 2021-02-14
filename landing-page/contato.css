@@ -1,0 +1,161 @@
+* {
+    font-family:'poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+    /* cabeçalho */
+    header {
+        background-color: #1F1F24;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5rem;
+    }
+    
+    #links-menu a {
+        padding: 0.5rem 0.5rem;
+        font-size: 1.1rem;
+        text-decoration: none;
+        color: white;
+    }
+    
+    #links-menu a:hover {
+        background-color: rgba(255, 255, 255, 0.226);
+        border-radius: 2px;
+    }
+    
+    #botao-login {
+        margin-left: 1rem;
+    }
+    
+    header nav {
+        display: flex;
+        align-items: center;
+    }
+    
+    header button {
+        background-color: #C45C5C;
+        font-size: 1.3rem;
+        font-weight: 600;
+        border: none;
+        padding: 0.5rem 1.5rem;
+        border-radius: 2rem;
+        outline: none;
+        margin: 2%;
+    }
+    
+    header button:hover {
+        padding: 0.4rem 1.38rem;
+        color: #C45C5C;
+        border: 2px #C45C5C solid;
+        background-color: #c45c5c00;
+    }
+    
+    header button:active {
+        border-color: white;
+        color: white;
+    }
+    
+    header img {
+        width: 15%;
+    }
+    
+
+     #main-container {
+        padding-bottom: 3rem;
+    }
+
+    h2 {
+        color: #C45C5C;
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+        padding-left: 1.5rem;
+    }
+
+    .container {
+        margin-bottom: 4rem;
+    
+    }
+
+  
+
+    #telefone {
+        background-color: #d9c7b857;
+        padding: 1.5rem 3rem 1.5rem 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    #whatsapp {
+        background-color: #d9c7b857;
+        padding: 1.5rem 3rem 1.5rem 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    #email {
+        background-color: #d9c7b857;
+        padding: 1.5rem 3rem 1.5rem 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    #localizacao {
+        background-color: #d9c7b857;
+        padding: 1.5rem 3rem 2rem 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+
+
+    /* footer  */
+
+    footer {
+        background-color: #1F1F24;
+        color: rgba(255, 255, 255, 0.63);
+    }
+    
+    footer section:first-child {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+    }
+    
+    footer section:last-child {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5rem 1.5rem 1.5rem 1.5rem;
+        border-top: 2px rgba(255, 255, 255, 0.158) solid;
+    }
+    
+    #logo-rodape {
+        width: 10%;
+        height: 80%;
+    }
+    
+    #rodape-redes-sociais {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #rodape-redes-sociais a {
+        margin: 0.5rem;
+    }
+    
+    footer a:last-child img {
+        width: 2.5rem;
+    }
+    
+    footer a img {
+        width: 1.8rem;
+    }
+    
+    /* ===================
+    ==== responsividade ==
+    ====================== */
+    
+    @media screen and (max-device-width: 420px) {
+    } 
