@@ -282,20 +282,19 @@ header img {
     font-size: 1rem;
 }
 
-
-#div-container1{
+.div-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* background-color: #1F1F24; */
     margin-top: 8rem;
 }
-#div-container1 div{
+
+.div-container div {
     display: flex;
     flex-direction: column;
 }
 
-#botao-cadastrar{
+#botao-cadastrar {
     margin: 5% auto;
     width: 50%;
 }
@@ -360,140 +359,6 @@ header img {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 0.5fr 0.5fr;
- }
- 
- .somos h1{
-     background-color: #d9c7b8;
-     font-size: 4em;
-     margin-top: 0.5em;
-     justify-content: center;
-     display: grid;
-     align-items: center;
-     margin-top: 0.5em;
- }
- 
- .somos p{
-     font-size: 2em;
-     margin-top: 0.5em;
-     display: grid;
-     justify-content: center;
-     align-items: center;
- }
- 
- .somos h6{
-     font-size: 1em;
-     display: grid;
-     justify-content: center;
-     align-items: center;
- }
- 
- .mudando{
-     margin-top: 3em;
-     background-color: moccasin;
-     display: grid;
-     grid-template-columns: 1fr 1fr;
-     grid-template-rows: 0.5fr 1fr;
-     height: 80vh;
- }
- 
- .mudando .titulo{
-     grid-column: 1/-1;
-     grid-row: 1/2;
-     display: grid;
-     justify-content: center;
-     align-items: center;
-     font-size: 2em;
- }
- 
- .box1{
-     width: 100vw;
-     justify-content: center;
-     font-size: 1.5em;
-     display: grid;
-     grid-template-columns: 1fr 1fr;
-     height: 0.5fr;
- }
- 
- .box1 .texto{
-     padding-left: 5%;
-     padding-right: 5%;
-     grid-column: 1/2;
-     
- }
- 
- .box1 img{
-     width: 90%;
-     grid-column: 2/3;
-     
- }
- 
- .box1 h6{
-     font-size: 0.85em;
-     padding-top: 1em;
- }
- 
- .box1 h5{
-     padding-top: 1em;
- }
- 
- .final{
-     display: grid;
-     grid-template-columns: 1fr;
-     grid-template-rows: 0.4fr 1fr;
- }
- 
- .final .texto2{
-     grid-row: 1/2;
-     margin-top: 3em;
-     font-size: 1.5em;
-     width: 70%;
-     text-align: center;
-     margin: 1em auto ;
- }
- 
- .final img{
-     grid-row: 2/3;
-     height: 20rem;
-     width: 100%;
- }
- .formularios {
-    height: 72vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.formularios input {
-    outline: none;
-    border: none;
-    border-bottom: 1px black solid;
-}
-
-.formularios section {
-    height: 92%;
-    display: flex;
-    justify-content: center;
-    /* align-items: center;     */
-}
-
-.formularios form {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-}
-
-.formularios legend {
-    font-weight: 600;
-    font-size: 1.5rem;
-    text-align: center;
-}
-
-.formularios label {
-    margin-top: 1.5rem;
-}
-
-.formularios input {
-    font-size: 1.5rem;
- 
 }
 
 .somos h1 {
@@ -641,6 +506,7 @@ footer a img {
 ====================== */
 
 @media screen and (min-device-width: 421px) and (max-device-width: 800px) {
+    /*============ INDEX ========= */
     /* Cabeçalho */
     header {
         flex-direction: column;
@@ -682,6 +548,25 @@ footer a img {
     #logo-rodape {
         width: 20%;
         height: 80%;
+    }
+    /*============ LOGIN/CADASTRO   ========= */
+    .formularios {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100vh 1fr;
+    }
+    #card-principal {
+        height: 50vh;
+    }
+    .formularios section:first-child {
+        margin-top: 10%;
+    }
+    .formularios section:last-child {
+        margin-top: 10%;
+    }
+    .div-container {
+        margin-top: 0;
+        justify-content: space-between;
     }
 }
 
@@ -793,90 +678,35 @@ footer a img {
     footer section:last-child {
         font-size: 0.8rem;
     }
-
-    .somos {
+    /*============ LOGIN/CADASTRO   ========= */
+    .formularios form {
+        /* width: 50%; */
+    }
+    .formularios {
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 0.5fr 0.5fr;
-     }
-     
-     .somos h1{
-         background-color: #d9c7b8;
-         font-size: 4em;
-         margin-top: 0.5em;
-         justify-content: center;
-         display: grid;
-         align-items: center;
-         margin-top: 0.5em;
-     }
-     
-     .somos p{
-         font-size: 2em;
-         margin-top: 0.5em;
-         display: grid;
-         text-align: center;
-     }
-     
-     .somos h6{
-         font-size: 1em;
-         display: grid;
-         text-align: center;
-     }
-     
-       .mudando .titulo {
-        grid-column: 1/-1;
-        grid-row: 1/2;
-        display: grid;
-        justify-content: center;
-        align-items: center;
-        font-size: 2em;
-        text-align: center;
+        grid-template-columns: 100vw;
+        grid-template-rows: 80vh 1fr;
     }
-    
-    .box1 {
-        width: 100vw;
-        justify-content: center;
-        font-size: 1em;
-        display: grid;
-        grid-template-columns: 1fr ;
-        
-        height: 10fr;
-        background-color: bisque;
+    #card-principal {
+        height: 50vh;
     }
-    
-    .box1 .texto {
-        padding-left: 5%;
-        padding-right: 5%;
-        grid-column: 1/2;
+    .formularios section:first-child {
+        margin-top: 10%;
     }
-    
-    .box1 img {
-        width: 100%;
-        height: 100%;
-        grid-row: 2/3;
-       
+    .formularios section:last-child {
+        margin-top: 10%;
     }
-
-    .final {
-        display: flex;
+    .div-container {
+        margin-top: 0;
+        justify-content: space-between;
         flex-direction: column;
-        margin-top: 10em;
-        
-    }
-    
-    .final .texto2 {
-      
-        
-        font-size: 1.5em;
-        width: 70%;
-        text-align: center;
-     
-    }
-    
-    .final img {
-        
-        height: 20rem;
         width: 100%;
-    }    
-  
+        align-items: flex-start;
+    }
+    #input-idade, #input-estados, #input-cidade{
+        width: 80vw;
+    }
+    #form-login img{
+        width: 30%;
+    }
 }
